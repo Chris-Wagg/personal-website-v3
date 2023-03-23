@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import NavBar from './components/NavBar'
 import './App.css'
 import AboutMe from './components/AboutMe'
+import Projects from './components/Projects'
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<NavBar />
 			<HeroSection />
 			<AboutMe />
+			<Projects />
 		</>
 		// <BrowserRouter>
 		// 	<NavBar />

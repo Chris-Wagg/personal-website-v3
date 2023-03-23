@@ -154,3 +154,12 @@ a {
 .about-me-text {
 	width: 30vw;
 }
+
+/* ----------------------- */
+/* projects section classes */
+
+.projects-container {
+	height: 100vh;
+	width: 100vw;
+	background-color: #1f2937;
+}
