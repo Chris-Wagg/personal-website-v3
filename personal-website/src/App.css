@@ -13,7 +13,7 @@ body {
 /* ----------------------- */
 /* animation classes */
 
-.hidden {
+/* .hidden {
 	opacity: 0;
 	filter: blur(5px);
 	transform: translateX(-100%);
@@ -24,7 +24,7 @@ body {
 	opacity: 1;
 	filter: blur(0);
 	transform: translateX(0);
-}
+} */
 
 /* ----------------------- */
 /* text specific classes */
@@ -135,7 +135,7 @@ a {
 
 .about-me-container {
 	width: 100vw;
-	height: 100vh;
+	height: 80vh;
 	background-color: #f9faf8;
 	transform: skewY(-5deg);
 	display: flex;
@@ -153,13 +153,20 @@ a {
 
 .about-me-text {
 	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.about-me-text > div {
+	font-size: large;
 }
 
 /* ----------------------- */
 /* projects section classes */
 
 .projects-container {
-	height: 100vh;
+	height: 110vh;
 	width: 100vw;
 	background-color: #1f2937;
 }
