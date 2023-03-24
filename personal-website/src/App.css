@@ -92,7 +92,7 @@ button {
 }
 
 button:hover {
-	scale: 1.1;
+	scale: 1.15;
 	cursor: pointer;
 }
 
@@ -169,4 +169,47 @@ a {
 	height: 110vh;
 	width: 100vw;
 	background-color: #1f2937;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.projects {
+	display: flex;
+	gap: 50px;
+}
+
+.project-card-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 320px;
+	height: 280px;
+	background-color: #3d4e69;
+	padding: 20px;
+	border-radius: 8px;
+	border: 1px solid #64ffda;
+}
+
+.project-name {
+	color: #e5e7eb;
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+.about-project {
+	color: #e5e7eb;
+}
+
+.project-tech-list {
+	font-size: 12px;
+	color: #e5e7eb;
+}
+
+.project-link {
+	color: #64ffda;
+}
+
+.project-card-container > button {
+	width: 150px;
 }
