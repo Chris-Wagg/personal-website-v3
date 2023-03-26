@@ -1,8 +1,9 @@
-import ProjectCard from './ProjectCard'
+import ProjectCard from '../components/ProjectCard'
 
 export default function Projects() {
 	return (
 		<div className="projects-container">
+			<div className="main-text">Projects</div>
 			<section className="projects">
 				<ProjectCard
 					projectName="KIND"
