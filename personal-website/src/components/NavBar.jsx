@@ -1,4 +1,14 @@
 export default function NavBar() {
+	function scrollAbout() {
+		document.getElementById('scroll-target-about').scrollIntoView()
+	}
+	function scrollProjects() {
+		document.getElementById('scroll-target-projects').scrollIntoView()
+	}
+	function scrollExperience() {
+		document.getElementById('scroll-target-experience').scrollIntoView()
+	}
+	// fix jerky scrolling with css scroll behaviour class on html
 	return (
 		<>
 			<div class="nav">
@@ -6,6 +16,15 @@ export default function NavBar() {
 					<h1>Welcome to my page!</h1>
 				</section>
 				<section class="nav-links">
+					<button className="secondary-text-green" onClick={scrollAbout}>
+						About me
+					</button>
+					<button className="secondary-text-green" onClick={scrollProjects}>
+						Projects
+					</button>
+					<button className="secondary-text-green" onClick={scrollExperience}>
+						Experience
+					</button>
 					<button>
 						<a href="https://github.com/Chris-Wagg">Github</a>
 					</button>

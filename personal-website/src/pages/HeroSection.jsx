@@ -37,11 +37,14 @@ export default function HeroSection() {
 							I find my passion for tech in the front end, specifically in UI
 							design and implementation.
 						</div>
-						<div className="secondary-text">
+						{/* <div className="secondary-text">
 							Check out some of my stuff down below!
-						</div>
-						<button className="scolling-button" onClick={scrollTrigger}>
-							click me!
+						</div> */}
+						<button
+							className="secondary-text-green small-button"
+							onClick={scrollTrigger}
+						>
+							Check out my Projects!
 						</button>
 					</div>
 				</div>

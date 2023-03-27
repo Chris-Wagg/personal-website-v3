@@ -15,7 +15,7 @@ export default function Experience() {
 	hiddenElements.forEach((el) => observer.observe(el))
 
 	return (
-		<div className="experience-container">
+		<div className="experience-container" id="scroll-target-experience">
 			<div className="main-text-blue unskew hidden">Experience</div>
 			<section className="experience hidden">
 				<ExperienceCard
