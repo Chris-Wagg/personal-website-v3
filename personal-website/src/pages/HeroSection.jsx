@@ -12,11 +12,6 @@ export default function HeroSection() {
 	const hiddenElements = document.querySelectorAll('.hidden')
 	hiddenElements.forEach((el) => observer.observe(el))
 
-	function scrollTrigger() {
-		document.getElementById('scroll-target').scrollIntoView()
-	}
-	// fix jerky scrolling with css scroll behaviour class on html
-
 	return (
 		<>
 			<section className="intro-content-container">
@@ -37,15 +32,9 @@ export default function HeroSection() {
 							I find my passion for tech in the front end, specifically in UI
 							design and implementation.
 						</div>
-						{/* <div className="secondary-text">
+						<div className="secondary-text">
 							Check out some of my stuff down below!
-						</div> */}
-						<button
-							className="secondary-text-green small-button"
-							onClick={scrollTrigger}
-						>
-							Check out my Projects!
-						</button>
+						</div>
 					</div>
 				</div>
 			</section>
