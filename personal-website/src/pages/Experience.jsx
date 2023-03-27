@@ -1,10 +1,23 @@
 import ExperienceCard from '../components/ExperienceCard'
 
 export default function Experience() {
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('show')
+			} else {
+				entry.target.classList.remove('show')
+			}
+		})
+	})
+
+	const hiddenElements = document.querySelectorAll('.hidden')
+	hiddenElements.forEach((el) => observer.observe(el))
+
 	return (
 		<div className="experience-container">
-			<div className="main-text-blue unskew">Experience</div>
-			<section className="experience">
+			<div className="main-text-blue unskew hidden">Experience</div>
+			<section className="experience hidden">
 				<ExperienceCard
 					experienceName="Enspiral Dev Academy (EDA)"
 					experienceDate="Jul 2021 - Oct 2021"

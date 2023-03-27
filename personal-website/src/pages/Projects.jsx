@@ -1,10 +1,23 @@
 import ProjectCard from '../components/ProjectCard'
 
 export default function Projects() {
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('show')
+			} else {
+				entry.target.classList.remove('show')
+			}
+		})
+	})
+
+	const hiddenElements = document.querySelectorAll('.hidden')
+	hiddenElements.forEach((el) => observer.observe(el))
+
 	return (
 		<div className="projects-container">
-			<div className="main-text underline">Projects</div>
-			<section className="projects">
+			<div className="main-text underline hidden">Projects</div>
+			<section className="projects hidden">
 				<ProjectCard
 					projectName="KIND"
 					aboutProject="The final project of my coding bootcamp that was built with 4 others

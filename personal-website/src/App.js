@@ -16,12 +16,6 @@ function App() {
 			<Projects />
 			<Experience />
 		</>
-		// <BrowserRouter>
-		// 	<NavBar />
-		// 	<Routes>
-		// 		<Route path="/" element={<Home />} />
-		// 	</Routes>
-		// </BrowserRouter>
 	)
 }
 

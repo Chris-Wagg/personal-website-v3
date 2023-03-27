@@ -14,10 +14,10 @@ export default function AboutMe() {
 
 	return (
 		<>
-			<section className="about-me-container">
+			<section className="about-me-container" id="scroll-target">
 				<div className="hidden">
-					<div className="about-me-text">
-						<h1>About me...</h1>
+					<div className="about-me-text hidden" id="about-me-text-div">
+						<h1>About me</h1>
 						<div>
 							Hey! I'm Chris and I want to build stuff for the internet. My
 							journey to become a developer started in 2021 when I started
