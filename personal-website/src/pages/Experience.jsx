@@ -1,24 +1,8 @@
 import ExperienceCard from '../components/ExperienceCard'
 
 export default function Experience() {
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add('show')
-			} else {
-				entry.target.classList.remove('show')
-			}
-		})
-	})
-
-	const hiddenElements = document.querySelectorAll('.hidden')
-	hiddenElements.forEach((el) => observer.observe(el))
-
 	return (
-		<section
-			className="secondary-container hidden"
-			id="scroll-target-experience"
-		>
+		<section className="secondary-container" id="scroll-target-experience">
 			<h1 className="title-text">Experience</h1>
 			<div className="experience-cards-container">
 				<ExperienceCard

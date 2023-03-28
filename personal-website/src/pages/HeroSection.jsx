@@ -1,20 +1,7 @@
 export default function HeroSection() {
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add('show')
-			} else {
-				entry.target.classList.remove('show')
-			}
-		})
-	})
-
-	const hiddenElements = document.querySelectorAll('.hidden')
-	hiddenElements.forEach((el) => observer.observe(el))
-
 	return (
 		<>
-			<section className="main-container hidden" id="scroll-top-target">
+			<section className="main-container" id="scroll-top-target">
 				<div className="text-container">
 					<p className="text-green">Hi, I'm...</p>
 					<h1>Chris Wagg - </h1>

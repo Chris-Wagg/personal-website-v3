@@ -1,21 +1,8 @@
 import ProjectCard from '../components/ProjectCard'
 
 export default function Projects() {
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				entry.target.classList.add('show')
-			} else {
-				entry.target.classList.remove('show')
-			}
-		})
-	})
-
-	const hiddenElements = document.querySelectorAll('.hidden')
-	hiddenElements.forEach((el) => observer.observe(el))
-
 	return (
-		<section className="secondary-container hidden" id="scroll-target-projects">
+		<section className="secondary-container" id="scroll-target-projects">
 			<h1 className="title-text">Projects</h1>
 			<div className="project-cards-container">
 				<ProjectCard
