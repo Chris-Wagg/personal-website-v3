@@ -3,9 +3,9 @@ export default function EXperienceCard(props) {
 		props
 	return (
 		<div className="experience-card-container">
-			<div className="experience-name">{experienceName}</div>
-			<div className="experience-date">{experienceDate}</div>
-			<div className="about-experience">{aboutExperience}</div>
+			<p>{experienceName}</p>
+			<p className="experience-date">{experienceDate}</p>
+			<p className="about-experience">{aboutExperience}</p>
 			{/* <div className="experience-tech-list"> - {experienceTech}</div> */}
 		</div>
 	)

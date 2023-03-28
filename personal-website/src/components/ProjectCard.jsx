@@ -2,10 +2,9 @@ export default function ProjectCard(props) {
 	const { projectName, aboutProject, projectTech, liveLink, githubLink } = props
 	return (
 		<div className="project-card-container">
-			<div className="icon"></div>
 			<div className="project-name">{projectName}</div>
-			<div className="about-project">{aboutProject}</div>
-			<div className="project-tech-list"> - {projectTech}</div>
+			<p className="about-project">{aboutProject}</p>
+			<p className="project-tech-list text-green"> - {projectTech}</p>
 			<div className="link-buttons">
 				<button className="project-link">
 					<a target="_blank" rel="noopener noreferrer" href={liveLink}>
