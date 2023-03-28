@@ -204,6 +204,9 @@ summary::marker {
 	.text-container {
 		width: 80%;
 	}
+	.nav {
+		position: absolute;
+	}
 }
 
 @media (max-width: 425px) {
