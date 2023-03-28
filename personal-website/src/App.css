@@ -105,7 +105,7 @@ li {
 .hidden {
 	opacity: 0;
 	filter: blur(5px);
-	transform: translateX(-100%);
+	transform: translateX(-80%);
 	transition: all 1.5s;
 }
 
@@ -234,4 +234,10 @@ summary::marker {
 	button {
 		font-weight: 700;
 	}
-} ;
+}
+
+@media (prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+}
