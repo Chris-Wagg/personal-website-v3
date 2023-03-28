@@ -3,10 +3,12 @@ export default function EXperienceCard(props) {
 		props
 	return (
 		<div className="experience-card-container">
-			<p>{experienceName}</p>
-			<p className="experience-date">{experienceDate}</p>
-			<p className="about-experience">{aboutExperience}</p>
-			{/* <div className="experience-tech-list"> - {experienceTech}</div> */}
+			<p className="card-title">{experienceName}</p>
+			<p className="text-green">{experienceDate}</p>
+			<details>
+				<summary></summary>
+				<p>{aboutExperience}</p>
+			</details>
 		</div>
 	)
 }

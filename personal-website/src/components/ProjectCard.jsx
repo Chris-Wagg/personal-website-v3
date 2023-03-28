@@ -2,7 +2,7 @@ export default function ProjectCard(props) {
 	const { projectName, aboutProject, projectTech, liveLink, githubLink } = props
 	return (
 		<div className="project-card-container">
-			<div className="project-name">{projectName}</div>
+			<div className="card-title">{projectName}</div>
 			<p className="about-project">{aboutProject}</p>
 			<p className="project-tech-list text-green"> - {projectTech}</p>
 			<div className="link-buttons">
