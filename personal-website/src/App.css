@@ -180,6 +180,12 @@ a {
 	margin-bottom: 20px;
 }
 
+.link-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
 /* ----------------------- */
 /* experience section classes */
 
