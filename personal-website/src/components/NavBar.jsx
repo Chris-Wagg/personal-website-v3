@@ -8,12 +8,15 @@ export default function NavBar() {
 	function scrollExperience() {
 		document.getElementById('scroll-target-experience').scrollIntoView()
 	}
+	function scrollTop() {
+		document.getElementById('scroll-top-target').scrollIntoView()
+	}
 	// fix jerky scrolling with css scroll behaviour class on html
 	return (
 		<>
 			<div class="nav">
 				<section class="nav-text">
-					<h1>Welcome to my page!</h1>
+					<button onClick={scrollTop}>Chris Wagg</button>
 				</section>
 				<section class="nav-links">
 					<div>

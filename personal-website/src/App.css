@@ -7,6 +7,8 @@ body {
 
 html {
 	scroll-behavior: smooth;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 /* ----------------------- */
@@ -82,7 +84,7 @@ a {
 }
 
 .title-text {
-	padding-bottom: 10vh;
+	padding-bottom: 5vh;
 	text-decoration-line: underline;
 	text-decoration-color: #64ffda;
 }
@@ -124,12 +126,15 @@ li {
 	padding-top: 10px;
 	min-width: 100vw;
 	position: fixed;
+	gap: 10px;
 }
 
-.nav-text > h1 {
+.nav-text > button {
 	color: #64ffda;
 	font-size: 24px;
 	font-weight: 400;
+	border: none;
+	background: none;
 }
 
 .nav-links {
@@ -160,7 +165,6 @@ li {
 	flex-direction: column;
 	justify-content: space-between;
 	width: 310px;
-	height: 280px;
 	padding: 20px;
 	border-radius: 8px;
 	border: 1px solid #64ffda;
@@ -208,3 +212,26 @@ summary {
 summary::marker {
 	font-size: 32px;
 }
+
+/* ----------------------- */
+/* media queries / breakpoints */
+
+@media (max-width: 800px) {
+	.text-container {
+		width: 80%;
+	}
+}
+
+@media (max-width: 425px) {
+	.text-container {
+		width: 95%;
+	}
+
+	.nav-links > div {
+		gap: 10px;
+	}
+
+	button {
+		font-weight: 700;
+	}
+} ;

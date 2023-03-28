@@ -14,7 +14,7 @@ export default function HeroSection() {
 
 	return (
 		<>
-			<section className="main-container">
+			<section className="main-container" id="scroll-top-target">
 				<div className="text-container">
 					<p className="text-green">Hi, I'm...</p>
 					<h1>Chris Wagg - </h1>
