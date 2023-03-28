@@ -16,18 +16,12 @@ export default function NavBar() {
 					<h1>Welcome to my page!</h1>
 				</section>
 				<section class="nav-links">
-					<div className="page-links">
-						<button className="secondary-text-green" onClick={scrollAbout}>
-							About me
-						</button>
-						<button className="secondary-text-green" onClick={scrollProjects}>
-							Projects
-						</button>
-						<button className="secondary-text-green" onClick={scrollExperience}>
-							Experience
-						</button>
+					<div>
+						<button onClick={scrollAbout}>About me</button>
+						<button onClick={scrollProjects}>Projects</button>
+						<button onClick={scrollExperience}>Experience</button>
 					</div>
-					<div className="external-links">
+					<div>
 						<button>
 							<a
 								target="_blank"
