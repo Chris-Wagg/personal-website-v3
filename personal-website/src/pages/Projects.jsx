@@ -15,7 +15,7 @@ export default function Projects() {
 	hiddenElements.forEach((el) => observer.observe(el))
 
 	return (
-		<section className="secondary-container" id="scroll-target-projects">
+		<section className="secondary-container hidden" id="scroll-target-projects">
 			<h1 className="title-text">Projects</h1>
 			<div className="project-cards-container">
 				<ProjectCard
