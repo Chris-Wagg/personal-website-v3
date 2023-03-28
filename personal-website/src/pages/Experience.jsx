@@ -16,7 +16,7 @@ export default function Experience() {
 
 	return (
 		<section className="secondary-container" id="scroll-target-experience">
-			<h1>Experience</h1>
+			<h1 className="title-text">Experience</h1>
 			<div className="cards-container">
 				<ExperienceCard
 					experienceName="Enspiral Dev Academy (EDA)"

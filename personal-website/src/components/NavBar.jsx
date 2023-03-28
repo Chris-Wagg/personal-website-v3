@@ -16,26 +16,47 @@ export default function NavBar() {
 					<h1>Welcome to my page!</h1>
 				</section>
 				<section class="nav-links">
-					<button className="secondary-text-green" onClick={scrollAbout}>
-						About me
-					</button>
-					<button className="secondary-text-green" onClick={scrollProjects}>
-						Projects
-					</button>
-					<button className="secondary-text-green" onClick={scrollExperience}>
-						Experience
-					</button>
-					<button>
-						<a href="https://github.com/Chris-Wagg">Github</a>
-					</button>
-					<button>
-						<a href="https://www.linkedin.com/in/chriswagg">Linkedin</a>
-					</button>
-					<button>
-						<a href="Chris Wagg CV.docx.pdf" download>
-							My resume
-						</a>
-					</button>
+					<div className="page-links">
+						<button className="secondary-text-green" onClick={scrollAbout}>
+							About me
+						</button>
+						<button className="secondary-text-green" onClick={scrollProjects}>
+							Projects
+						</button>
+						<button className="secondary-text-green" onClick={scrollExperience}>
+							Experience
+						</button>
+					</div>
+					<div className="external-links">
+						<button>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://github.com/Chris-Wagg"
+							>
+								Github
+							</a>
+						</button>
+						<button>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://www.linkedin.com/in/chriswagg"
+							>
+								Linkedin
+							</a>
+						</button>
+						<button>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="Chris Wagg CV.docx.pdf"
+								download
+							>
+								My resume
+							</a>
+						</button>
+					</div>
 				</section>
 			</div>
 		</>

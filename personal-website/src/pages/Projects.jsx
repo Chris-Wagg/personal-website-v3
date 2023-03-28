@@ -16,7 +16,7 @@ export default function Projects() {
 
 	return (
 		<section className="secondary-container" id="scroll-target-projects">
-			<h1>Projects</h1>
+			<h1 className="title-text">Projects</h1>
 			<div className="cards-container">
 				<ProjectCard
 					projectName="KIND"

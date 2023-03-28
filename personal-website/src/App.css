@@ -15,7 +15,6 @@ h1 {
 	color: #dee8f8;
 	font-size: 60px;
 	font-weight: 700;
-	padding-bottom: 20px;
 	margin: 0;
 }
 
@@ -37,17 +36,15 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* height: 90vh; */
 	width: 100vw;
-	padding-top: 10vh;
+	padding: 25vh 0 25vh 0;
 }
 
 .secondary-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	/* height: 60vh; */
+	padding: 10vh 0 10vh 0;
 	width: 100vw;
 }
 
@@ -62,7 +59,11 @@ p {
 .text-container {
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+	width: 50%;
+}
+
+.title-text {
+	padding-bottom: 10vh;
 }
 
 .text-green,
@@ -95,7 +96,7 @@ li {
 	align-items: center;
 	flex-wrap: wrap;
 	background-color: #0a192f;
-	padding: 20px 0 20px 0;
+	padding-top: 10px;
 	min-width: 100vw;
 	position: fixed;
 }
@@ -108,8 +109,14 @@ li {
 
 .nav-links {
 	display: flex;
+	justify-content: center;
 	gap: 20px;
-	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.nav-links > div {
+	display: flex;
+	gap: 20px;
 }
 
 button {
