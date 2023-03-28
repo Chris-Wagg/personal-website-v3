@@ -15,14 +15,14 @@ export default function Experience() {
 	hiddenElements.forEach((el) => observer.observe(el))
 
 	return (
-		<div className="experience-container" id="scroll-target-experience">
-			<div className="main-text-blue unskew hidden">Experience</div>
-			<section className="experience hidden">
+		<section className="secondary-container" id="scroll-target-experience">
+			<h1>Experience</h1>
+			<div className="cards-container">
 				<ExperienceCard
 					experienceName="Enspiral Dev Academy (EDA)"
 					experienceDate="Jul 2021 - Oct 2021"
 					aboutExperience="A 16 week bootcamp learning modern tech stacks with a focus on hands-on learning and project driven work using agile methods. Human skills were also a big focus. 
-                    "
+									"
 					experienceTech=""
 				/>
 				<ExperienceCard
@@ -37,8 +37,8 @@ export default function Experience() {
 					aboutExperience="An open source fullstack course that focuses on deep understanding of fundamentals in HTML, CSS, JS, testing, React or Ruby. I am currently working my way through the content in my spare time, with a focus on front end aspects. "
 					experienceTech=""
 				/>
-			</section>
-		</div>
+			</div>
+		</section>
 	)
 }
 

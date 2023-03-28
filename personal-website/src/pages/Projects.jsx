@@ -15,14 +15,14 @@ export default function Projects() {
 	hiddenElements.forEach((el) => observer.observe(el))
 
 	return (
-		<div className="projects-container" id="scroll-target-projects">
-			<div className="main-text underline hidden">Projects</div>
-			<section className="projects hidden">
+		<section className="secondary-container" id="scroll-target-projects">
+			<h1>Projects</h1>
+			<div className="cards-container">
 				<ProjectCard
 					projectName="KIND"
 					aboutProject="The final project of my coding bootcamp that was built with 4 others
-                    in a little under a week. I was responsible for all the UI design
-                    and development"
+									in a little under a week. I was responsible for all the UI design
+									and development"
 					projectTech="React, MUI"
 					projectLink="https://github.com/manaia-2021/KIND"
 				/>
@@ -44,8 +44,8 @@ export default function Projects() {
 					projectTech="HTML, CSS"
 					projectLink="https://github.com/Chris-Wagg/TOP-landing-page"
 				/>
-			</section>
-		</div>
+			</div>
+		</section>
 	)
 }
 
