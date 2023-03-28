@@ -1,12 +1,14 @@
-export default function EXperienceCard(props) {
-	const { experienceName, experienceDate, aboutExperience, experienceTech } =
-		props
+export default function ExperienceCard(props) {
+	const { experienceName, experienceDate, aboutExperience } = props
+
 	return (
 		<div className="experience-card-container">
-			<div className="experience-name">{experienceName}</div>
-			<div className="experience-date">{experienceDate}</div>
-			<div className="about-experience">{aboutExperience}</div>
-			{/* <div className="experience-tech-list"> - {experienceTech}</div> */}
+			<p className="card-title">{experienceName}</p>
+			<p className="text-green">{experienceDate}</p>
+			<details>
+				<summary>About</summary>
+				<p>{aboutExperience}</p>
+			</details>
 		</div>
 	)
 }

@@ -15,30 +15,27 @@ export default function Experience() {
 	hiddenElements.forEach((el) => observer.observe(el))
 
 	return (
-		<div className="experience-container" id="scroll-target-experience">
-			<div className="main-text-blue unskew hidden">Experience</div>
-			<section className="experience hidden">
-				<ExperienceCard
-					experienceName="Enspiral Dev Academy (EDA)"
-					experienceDate="Jul 2021 - Oct 2021"
-					aboutExperience="A 16 week bootcamp learning modern tech stacks with a focus on hands-on learning and project driven work using agile methods. Human skills were also a big focus. 
-                    "
-					experienceTech=""
-				/>
-				<ExperienceCard
-					experienceName="Udemy Javascript course"
-					experienceDate="Oct 2021 - Mar 2022"
-					aboutExperience="A Javascript course focused on fundamentals and DOM manipulation. I spend a number of months working my way through this in my spare time,  "
-					experienceTech=""
-				/>
+		<section className="secondary-container" id="scroll-target-experience">
+			<h1 className="title-text">Experience</h1>
+			<div className="experience-cards-container">
 				<ExperienceCard
 					experienceName="The Odin Project (TOP)"
 					experienceDate="Mar 2022 - Current"
-					aboutExperience="An open source fullstack course that focuses on deep understanding of fundamentals in HTML, CSS, JS, testing, React or Ruby. I am currently working my way through the content in my spare time, with a focus on front end aspects. "
-					experienceTech=""
+					aboutExperience={`An open source fullstack course that focuses on deep understanding of fundamentals in HTML, CSS, JS, testing and React. I am currently working my way through the content in my spare time, with a focus on front end aspects. This is great project driven work that allows you to go through the sections you want to learn without feeling like you are missing huge chucks from other sections`}
 				/>
-			</section>
-		</div>
+
+				<ExperienceCard
+					experienceName="Udemy Javascript course"
+					experienceDate="Oct 2021 - Mar 2022"
+					aboutExperience={`A Javascript course focused on JS fundamentals and DOM manipulation. I spent a couple of months working through some of this content before moving onto The Odin Project`}
+				/>
+				<ExperienceCard
+					experienceName="Enspiral Dev Academy (EDA)"
+					experienceDate="Jul 2021 - Oct 2021"
+					aboutExperience={`A 16 week bootcamp learning modern tech stacks (React, Node, Jest, Redux, SQL) with a focus on hands-on learning and project driven work using agile methods. Another focus of this course was the human/ soft skills needed to be able to work with others. It taught a lot about giving and recieving feedback and learning how to learn`}
+				/>
+			</div>
+		</section>
 	)
 }
 
