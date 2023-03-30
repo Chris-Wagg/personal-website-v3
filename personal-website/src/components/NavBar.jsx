@@ -19,6 +19,10 @@ export default function NavBar() {
 					<button onClick={scrollTop}>Chris Wagg</button>
 				</section>
 				<section class="nav-links">
+					<input type="checkbox" id="check" />
+					<label htmlFor="check" className="check-button text-green">
+						...
+					</label>
 					<div>
 						<button onClick={scrollAbout}>About me</button>
 						<button onClick={scrollProjects}>Projects</button>

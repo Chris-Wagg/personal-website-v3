@@ -38,7 +38,7 @@ button:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 25vh 0 25vh 0;
+	padding: 20vh 0 20vh 0;
 }
 
 .secondary-container {
@@ -198,17 +198,61 @@ summary::marker {
 }
 
 /* ----------------------- */
+
+.check-button {
+	font-size: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+/* ----------------------- */
 /* media queries / breakpoints */
 
-@media (max-width: 800px) {
+/* Tablet size */
+@media (max-width: 900px) {
 	.text-container {
 		width: 80%;
 	}
+
 	.nav {
-		position: absolute;
+		padding-top: 0;
+		gap: 0;
 	}
+
+	.check-button {
+		display: flex;
+	}
+
+	.nav-links {
+		transition: 0.3s ease;
+		gap: 20px;
+		flex-direction: row-reverse;
+	}
+
+	.nav-links > div {
+		position: relative;
+		right: -110%;
+		transition: 0.3s ease;
+		gap: 20px;
+		flex-direction: row-reverse;
+	}
+
+	#check:checked ~ div {
+		position: relative;
+		right: 0;
+		/* border: 1px solid #e5e7eb; */
+	}
+
+	/* .text-container {
+		transform: translateY(-15%);
+	} */
 }
 
+/* mobile size */
 @media (max-width: 425px) {
 	.text-container {
 		width: 95%;
