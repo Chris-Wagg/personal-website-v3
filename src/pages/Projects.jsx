@@ -42,6 +42,13 @@ export default function Projects() {
 					liveLink='https://chris-wagg.github.io/TOP-landing-page/'
 					githubLink='https://github.com/Chris-Wagg/TOP-landing-page'
 				/>
+				<ProjectCard
+					projectName='QR code component'
+					aboutProject='A simple QR code component from the Frontend Mentor projects.'
+					projectTech='Next.js'
+					liveLink='https://chris-wagg.github.io/QR-code-component/'
+					githubLink='https://github.com/Chris-Wagg/QR-code-componen'
+				/>
 			</div>
 		</section>
 	)
