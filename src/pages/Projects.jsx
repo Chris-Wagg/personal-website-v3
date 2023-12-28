@@ -49,6 +49,13 @@ export default function Projects() {
 					liveLink='https://chris-wagg.github.io/QR-code-component/'
 					githubLink='https://github.com/Chris-Wagg/QR-code-componen'
 				/>
+				<ProjectCard
+					projectName='3 card component'
+					aboutProject='A simple 3 column card component from the Frontend Mentor projects.'
+					projectTech='Next.js'
+					liveLink='https://chris-wagg-frontend-mentor-projects.github.io/3-col-cards/'
+					githubLink='https://github.com/Chris-Wagg-Frontend-Mentor-Projects/3-col-cards'
+				/>
 			</div>
 		</section>
 	)
