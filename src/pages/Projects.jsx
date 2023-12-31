@@ -1,10 +1,21 @@
 import ProjectCard from '../components/ProjectCard'
+import { motion } from 'framer-motion'
 
 export default function Projects() {
 	return (
 		<section className='secondary-container' id='scroll-target-projects'>
-			<h1 className='title-text'>Projects</h1>
-			<div className='project-cards-container'>
+			<motion.div
+				initial={{ opacity: 0, translateX: -100 }}
+				whileInView={{ opacity: 1, translateX: 0 }}
+				transition={{ duration: 0.6 }}>
+				<h1 className='title-text'>Projects</h1>
+			</motion.div>
+
+			<motion.div
+				className='project-cards-container'
+				initial={{ opacity: 0, translateX: -100 }}
+				whileInView={{ opacity: 1, translateX: 0 }}
+				transition={{ duration: 1 }}>
 				<ProjectCard
 					projectName='M.E. Travel'
 					aboutProject='A self directed project to copy a full single page app with a focus on accessability and responsivity. Originally built with Typescrit and Tailwind, I reverted to CSS3 feeling it reduced bloat in my html and was generally easier for me to work with.'
@@ -56,7 +67,7 @@ export default function Projects() {
 					liveLink='https://chris-wagg-frontend-mentor-projects.github.io/3-col-cards/'
 					githubLink='https://github.com/Chris-Wagg-Frontend-Mentor-Projects/3-col-cards'
 				/>
-			</div>
+			</motion.div>
 		</section>
 	)
 }

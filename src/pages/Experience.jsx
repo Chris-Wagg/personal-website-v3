@@ -1,10 +1,20 @@
 import ExperienceCard from '../components/ExperienceCard'
+import { motion } from 'framer-motion'
 
 export default function Experience() {
 	return (
 		<section className='secondary-container' id='scroll-target-experience'>
-			<h1 className='title-text'>Experience</h1>
-			<div className='experience-cards-container'>
+			<motion.div
+				initial={{ opacity: 0, translateY: +100 }}
+				whileInView={{ opacity: 1, translateY: 0 }}
+				transition={{ duration: 0.7 }}>
+				<h1 className='title-text'>Experience</h1>
+			</motion.div>
+			<motion.div
+				className='experience-cards-container'
+				initial={{ opacity: 0, translateY: +100 }}
+				whileInView={{ opacity: 1, translateY: 0 }}
+				transition={{ duration: 1 }}>
 				<ExperienceCard
 					experienceName='Frontend Mentor'
 					experienceDate='Dec 2023 - Current'
@@ -26,7 +36,7 @@ export default function Experience() {
 					experienceDate='Jul 2021 - Oct 2021'
 					aboutExperience={`A 16 week bootcamp learning modern tech stacks (React, Node, Jest, Redux, SQL) with a focus on hands-on learning and project driven work using agile methods. Another focus of this course was the human/ soft skills needed to be able to work with others. It taught a lot about giving and recieving feedback and learning how to learn`}
 				/>
-			</div>
+			</motion.div>
 		</section>
 	)
 }
