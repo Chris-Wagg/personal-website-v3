@@ -17,6 +17,13 @@ export default function Projects() {
 				whileInView={{ opacity: 1, translateX: 0 }}
 				transition={{ duration: 1 }}>
 				<ProjectCard
+					projectName='Frontend Mentor Projects'
+					aboutProject='A series of projects found on Frontend Mentor. A great site for practicing front end dev fundamentals while working on portfoli projects. Really handy for getting some good learning and fun projects under your belt'
+					projectTech='Next.js, HTML, CSS, JS, API'
+					liveLink='https://www.frontendmentor.io/profile/Chris-Wagg'
+					githubLink='https://github.com/orgs/Chris-Wagg-Frontend-Mentor-Projects/repositories'
+				/>
+				<ProjectCard
 					projectName='M.E. Travel'
 					aboutProject='A self directed project to copy a full single page app with a focus on accessability and responsivity. Originally built with Typescrit and Tailwind, I reverted to CSS3 feeling it reduced bloat in my html and was generally easier for me to work with.'
 					projectTech='Next.js, CSS'
@@ -52,13 +59,6 @@ export default function Projects() {
 					projectTech='HTML, CSS'
 					liveLink='https://chris-wagg.github.io/TOP-landing-page/'
 					githubLink='https://github.com/Chris-Wagg/TOP-landing-page'
-				/>
-				<ProjectCard
-					projectName='Frontend Mentor Projects'
-					aboutProject='A series of projects found on Frontend Mentor. A great site for practicing front end dev fundamentals while working on portfoli projects. Really handy for getting some good learning and fun projects under your belt'
-					projectTech='Next.js, HTML, CSS, JS, API'
-					liveLink='https://www.frontendmentor.io/profile/Chris-Wagg'
-					githubLink='https://github.com/orgs/Chris-Wagg-Frontend-Mentor-Projects/repositories'
 				/>
 			</motion.div>
 		</section>
