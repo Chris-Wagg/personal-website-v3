@@ -54,18 +54,11 @@ export default function Projects() {
 					githubLink='https://github.com/Chris-Wagg/TOP-landing-page'
 				/>
 				<ProjectCard
-					projectName='QR code component'
-					aboutProject='A simple QR code component from the Frontend Mentor projects.'
-					projectTech='Next.js'
-					liveLink='https://chris-wagg.github.io/QR-code-component/'
-					githubLink='https://github.com/Chris-Wagg/QR-code-componen'
-				/>
-				<ProjectCard
-					projectName='3 card component'
-					aboutProject='A simple 3 column card component from the Frontend Mentor projects.'
-					projectTech='Next.js'
-					liveLink='https://chris-wagg-frontend-mentor-projects.github.io/3-col-cards/'
-					githubLink='https://github.com/Chris-Wagg-Frontend-Mentor-Projects/3-col-cards'
+					projectName='Frontend Mentor Projects'
+					aboutProject='A series of projects found on Frontend Mentor. A great site for practicing front end dev fundamentals while working on portfoli projects. Really handy for getting some good learning and fun projects under your belt'
+					projectTech='Next.js, HTML, CSS, JS, API'
+					liveLink='https://www.frontendmentor.io/profile/Chris-Wagg'
+					githubLink='https://github.com/orgs/Chris-Wagg-Frontend-Mentor-Projects/repositories'
 				/>
 			</motion.div>
 		</section>
